@@ -14,6 +14,7 @@ function binaryToDecimal (binaryInput) {
             let temp = 0;
             binarySum += temp;
         } else if (binaryInput[i] === "1"){
+            // from the left to right => 2^0...2^7
             let temp = Math.pow(2, powerIndex);
             binarySum += temp;
         }

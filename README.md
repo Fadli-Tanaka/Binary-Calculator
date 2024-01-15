@@ -1,3 +1,5 @@
+Author : M.Fadli A.
+
 The project goal is to create a converter of binary digit into decimal number (and vice versa) using Javascript.
 
 This is the update log file:
@@ -9,3 +11,8 @@ function to convert decimal number into binary digit.
 Adding new file : input.js --> include code to get the value from web page
 Adding new style.
 Adinng new line in html to input value.
+
+-- 15-01-2024 (14:41) --
+Adding binary-calculator folder
+This folder contain binary-calculator function
+Downside: Operation still cannot do/show minus sign operator.
