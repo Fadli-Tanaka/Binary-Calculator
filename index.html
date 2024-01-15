@@ -5,10 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Binary Calculator</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Binary Converter</h1>
+    <header>
+        <h1>Binary Converter</h1>
+    </header>
+    <div class="option-container">
+        <div>
+            <label for="converterSelect">Choose this section: </label>
+            <select name="converter" id="converterSelect">
+                <option value="binaryDecimal">Binary to Decimal Converter</option>
+                <option value="decimalBinary">Decimal to Binary Converter</option>
+            </select>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="binary-decimal-container input-container">
+            <div class="sub-container">
+                <label for="inputValue">Binary to Decimal</label> <br>
+                <input type="text" id="inputValue">
+            </div>
+            <div class="sub-container">
+                <p class="result-par">The Decimal Number: </p>
+                <p class="decimalResult result-span"></p>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="decimal-binary-container input-container">
+            <div class="sub-container">
+                <label for="inputValue2">Decimal to Binary</label> <br>
+                <input type="text" id="inputValue2">
+            </div>
+            <div class="sub-container">
+                <p class="result-par">The Binary Digit: </p>
+                <p class="binaryResult result-span"></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
     <script src="app.js"></script>
+    <script src="input.js"></script>
 </body>
 </html>

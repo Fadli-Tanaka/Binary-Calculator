@@ -42,9 +42,8 @@ function decimalToBinary(decimalInput){
 
         // for loop conditional to calculate how many number of binary digit 
         for(let tempCondition = true; tempCondition === true;){
-            if (tempDecimalDigit >= 255){
+            if (tempDecimalDigit >= Math.pow(2, digitNumber)){
                 digitNumber += 1;
-                tempDecimalDigit = tempDecimalDigit - 255;
             } else {
                 digitNumber += 0;
                 tempCondition = false;
